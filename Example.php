@@ -1,6 +1,6 @@
 <?php 
 
-require '../ClassTelegram.php';
+require 'ClassTelegram.php';
 
 
 $token = "YOUR_BOT_TOKEN"; // Required!
