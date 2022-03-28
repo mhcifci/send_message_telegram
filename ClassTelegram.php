@@ -23,7 +23,7 @@ class ClassTelegram {
 		$token = $this->token;
 		$get = $this->bot_url.$this->token."/getUpdates";
 		$data = json_decode(file_get_contents($get));
-		return $data->result[0]->my_chat_member->chat->id;
+		return $data->result[0]->message->from->id;
 	}
 
 	public function sendMessage($text, $channelID){
